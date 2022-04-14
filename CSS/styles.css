@@ -2,24 +2,35 @@ body {
    font-family: Roboto, Tahoma, sans-serif; 
    color: #000000;  
 }
+
+:root {
+    --first-basic-color: #FFFFFF; 
+    --second-basic-color: #212121;
+    --main-team: #757575;
+}
+
 .list {
     list-style: none;
 }
+
 .link {
     text-decoration: none;
 }
+
 /*Шапка сторінки*/
 .header-item {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
-    color:  #212121;
+    color: var(--second-basic-color) ;
 }
+
 .header-item:hover,
 .header-item:focus {
     color: #2196F3;
 }
+
 .header-logo {
     font-family: 'Raleway';
     font-weight: 700;
@@ -28,6 +39,7 @@ body {
     letter-spacing: 0.03em;
     color: #2196F3;
 }
+
 .header-logo-second {
     font-family: 'Raleway';
     font-weight: 700;
@@ -36,26 +48,31 @@ body {
     letter-spacing: 0.03em;
     color: #000000;;
 }
+
 .header-telephone-gmail {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
-    color: #757575;
+    color: var(--main-team);
     
 }
+
 /*Унікальний контент*/
+
 .section-one {
     background: #2F303A; 
 }
+
 .side-title {
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-    color: #FFFFFF;
+    color: var(--first-basic-color);
 }
+
 .button-type {
     border-radius: 4px;
     background: #2196F3;
@@ -67,79 +84,76 @@ body {
     letter-spacing: 0.06em;
     color: #FFFFFF;
 }
+
 .button-type:hover,
 .button-type:focus {
     cursor: pointer;
     color: #FFFFFF;
 }
+
 .main-heading {
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: #212121;
+    color: var(--second-basic-color);
 } 
+
 .main-paragraph {
-    font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
-    color: #757575;
+    color: var(--main-team);
 } 
+
 .about-us-heading {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.16;
     text-align: center;
     letter-spacing: 0.03em;
-    color: #212121;
+    color: var(--second-basic-color);
 }
-.about-us-img {
-    width: 370px;
-    height: 294px;
-    left: 215px;
-    top: 1061px;
-}
+
 /*Наша команда*/
+
 .our-team {
     background: #F5F4FA;
 }
+
 .team-title {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.16;
     text-align: center;
     letter-spacing: 0.03em;
-    color: #212121;  
+    color: var(--second-basic-color);  
 }
-.team-img {
-    width: 270px;
-    height: 260px;
-    left: 215px;
-    top: 1635px;
-}
+
 .team-heading {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.18;
     text-align: center;
     letter-spacing: 0.03em;
-    color: #212121;
+    color: var(--second-basic-color);
 }
+
 .team-paragraph {
-    font-weight: 400;
     font-size: 16px;
-    line-height: 19px;
+    line-height: 1.18;
     text-align: center;
     letter-spacing: 0.03em;
-    color: #757575;   
+    color: var(--main-team);   
 }
 
 /*Підвал сторінки*/
+
 .footer-page {
     background: #2F303A;
 }
+
 .footer-logo {
     font-family: 'Raleway';
     font-weight: 700;
@@ -148,29 +162,34 @@ body {
     letter-spacing: 0.03em;
     color: #2196F3;
 }
+
 .footer-logo-second {
     font-family: 'Raleway';
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
     letter-spacing: 0.03em;
-    color: #FFFFFF;
+    color: var(--first-basic-color);
 }
+
 .footer-maps {
-    font-weight: 400;
+    font-style: normal;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
-    color: #FFFFFF;
+    color: var(--first-basic-color);
 }
+
 .footer-gmail-phone {
-    font-weight: 400;
+    font-style: normal;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
 }
+
 .button-portfolio {
+    font-family: 'Roboto';
     font-weight: 500;
     font-size: 16px;
     line-height: 1.625;
@@ -179,23 +198,24 @@ body {
     color: #212121;
     cursor: pointer
 }  
+
 .button-portfolio:hover,
 .button-portfolio:focus {
     color: #FFFFFF;
     background-color: #2196F3;
 }  
+
 .portfolio-heading {
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
-    color: #212121;
+    color: var(--second-basic-color);
 } 
+
 .portfolio-paragraph {
-    font-style: normal;
-    font-weight: 400;
     font-size: 16px;
     line-height: 1.875;
     letter-spacing: 0.03em;
-    color: #757575;
+    color: var(--main-team);
     } 
